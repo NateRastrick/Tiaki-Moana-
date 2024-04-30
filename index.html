@@ -1,0 +1,162 @@
+<html> 
+<head>
+        <title> Tiaki Moana </title> 
+        <link href="stylesheet.css" type="text/css" rel="stylesheet">
+    </head> 
+  
+    <body> 
+     
+        <div id="navbar" class="sticky" > 
+  <div class="menu">
+    <nav>  
+      <img class="logoImage" src="logo-transparent-png.png" alt="logo">
+      <a class="navbartitle" href="index.html">Tiaki Moana </a>
+      <!--  <div class="logotxt"> --> 
+            
+      <!-- </div> -->   
+    
+      <a href="tiakimoana-whatisit.html"> What is it? </a>
+      <a href="tiakimoana-whydoesitmatter.html"> Why does it matters?</a>
+      <a href="tiakimoana-whatcanyoudo.html" id="calltoaction"> What can you do?</a>
+    </nav>
+  </div>
+</div>
+        
+ <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img class="slideshowwidth"src="139d1c61-rod-long-4dcslxqxshy-unsplash-edited-scaled.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img class="slideshowwidth" src="cape-reinga-new-zealand.webp" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img class="slideshowwidth" src="NZ-Best-Beaches-Hot-Water-Beach.webp" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+        
+        
+        <script> 
+            let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+            let timer = setInterval(function() {
+  plusSlides(1);
+}, 4000);
+        </script>
+
+<div class="container"> 
+  <div  class="imageContainer"> 
+    <img class="images" src="4304424613_7e3a5fd99d_b.jpg">
+  </div>
+  <div class="text-containter">
+    <p class="textSpacing"> Welcome to Tiaki Moana, your go-to destination for all things ocean conservation in Aotearoa, New Zealand. Our website is dedicated to providing informative and engaging content that explores the importance of ocean conservation, why it matters now more than ever, and practical steps you can take to make a difference. <br> <br>
+
+      
+      Whether you're curious about the wonders of marine biodiversity, concerned about the impacts of climate change on our oceans, or eager to get involved in conservation efforts, Tiaki Moana has something for you. Our content covers a wide range of topics, from the role of marine protected areas to the importance of sustainable seafood choices. <br> <br>
+      
+      Dive into Tiaki Moana today and start your journey towards becoming a champion for ocean conservation!
+    
+  </div>
+</div>
+
+
+<div class="container"> 
+  <div  class="imageContainer"> 
+    <img class="images" src="26SZKWXQCNMDLJGSKE347NI2MM.jpg">
+  </div>
+  <div class="textContainter">
+    <p class="textSpacing"> Ocean conservation, also known as Tiaki Moana, is the proactive effort to protect and sustainably manage the world's oceans and marine resources. It involves a range of actions aimed at preserving marine biodiversity, combating pollution, addressing climate change impacts, and promoting responsible use of ocean resources. Ocean conservation is crucial for maintaining the health of marine ecosystems, supporting coastal communities, and ensuring a sustainable future for generations to come. Join us at Tiaki Moana as we work together to protect and nurture our oceans for the benefit of all.
+    </p>
+    
+  </div>
+</div>
+
+
+
+
+
+<footer> 
+  <div class="footerPages">
+  
+    <a href="index.html" class="footerTextcolour">Homepage</a>
+    <br> 
+    <br>
+    
+    <a href="tiakimoana-whatisit.html" class="footerTextcolour">What is it?</a>
+    <br>
+    <br>
+    <a href="tiakimoana-whydoesitmatter.html" class="footerTextcolour"> Why does it matter?</a>
+    <br>
+    <br>
+    <a href="tiakimoana-whatcanyoudo.html" class="footerTextcolour"> What can you do?</a>
+    <br>
+    
+    <br>
+     </div>
+
+  <div class="footerText">
+  <p class="footerTextcolour"> Created by Nate Rastrick copyright 2024 Year 11 Digiital  </p>
+  <br> 
+  <p class="footerTextcolour"> Contact: n22.rastrick@student.stjohns-hamilton.school.nz </p>
+  <br> 
+  <p class="footerTextcolour">  Credits: Seán Osborne (Stakeholder), Mrs Govender (Teacher)  </p>
+  <br> 
+  <p class="footerTextcolour"> Other Resources: https://wwf.org.nz/looking-after-our-ocean </p>
+  <br>
+
+<br>
+</div>
+
+
+</footer>
+
+        
+    </body>
+    
+</html>
